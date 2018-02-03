@@ -8,8 +8,10 @@ export default {
         'rxjs/add/operator/do',
         'rxjs/add/operator/finally',
         'rxjs/add/operator/map',
+        'rxjs/add/operator/takeUntil',
         'rxjs/add/operator/share',
-        'rxjs/Observable'
+        'rxjs/Observable',
+        'rxjs/Subject',
 	],
     globals: {
         '@angular/common': 'ng.common',
@@ -19,8 +21,10 @@ export default {
 		'rxjs/add/operator/do' : 'Rx.Observable.prototype',
 		'rxjs/add/operator/finally' : 'Rx.Observable.prototype',
 		'rxjs/add/operator/map' : 'Rx.Observable.prototype',
+		'rxjs/add/operator/takeUntil' : 'Rx.Observable.prototype',
 		'rxjs/add/operator/share' : 'Rx.Observable.prototype',
-		'rxjs/Observable' : 'Rx'
+		'rxjs/Observable' : 'Rx',
+		'rxjs/Subject' : 'Rx',
     },
 	onwarn: ( warning ) => {
 		const skip_codes = [
