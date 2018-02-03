@@ -1,18 +1,19 @@
 {
   "name": "angular-svg-icon",
-  "description": "Angular 5 component for inlining SVGs allowing them to be easily styled with CSS.",
-  "version": "5.0.0",
+  "description": "Angular 5+ component for inlining SVGs allowing them to be easily styled with CSS.",
+  "version": "5.1.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/czeckd/angular-svg-icon.git"
   },
+  "bugs": {
+    "url": "https://github.com/czeckd/angular-svg-icon/issues"
+  },
   "author": "David Czeck",
   "license": "MIT",
-  "typings": "index.d.ts",
   "keywords": [
     "angular",
-    "angular2",
-    "angular4",
+    "ngx",
     "svg",
     "icon"
   ],
@@ -21,13 +22,13 @@
     "tsc": "tsc",
     "tsc:w": "tsc -w",
     "clean": "rimraf runt dist",
-    "dist": "tools/mkdist",
+    "dist": "ng-packagr -p lib/package.json && cp README.md LICENSE dist",
     "lite": "lite-server",
     "lint": "tslint -c tslint.json ./app/**/*.ts ./lib/**/*.ts -t verbose || true"
   },
   "peerDependencies": {
-    "@angular/core": "^4.3.0 || ^5.0.0",
-    "@angular/common": "^4.3.0 || ^5.0.0",
+    "@angular/core": ">=4.3.0",
+    "@angular/common": ">=4.3.0",
     "rxjs": "^5.5.2"
   },
   "devDependencies": {
@@ -43,6 +44,7 @@
     "concurrently": "^2.2.0",
     "core-js": "^2.5.1",
     "lite-server": "^2.2.2",
+    "ng-packagr": "^1.6.0",
     "rimraf": "^2.6.1",
     "rollup": "^0.51.1",
     "rxjs": "^5.5.2",

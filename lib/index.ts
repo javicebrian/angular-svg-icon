@@ -1,4 +1,4 @@
-export * from './angular-svg-icon.module';
-export * from './svg-icon-registry.service';
-export * from './svg-icon.component';
+export * from './src/angular-svg-icon.module';
+export * from './src/svg-icon-registry.service';
+export * from './src/svg-icon.component';
 
