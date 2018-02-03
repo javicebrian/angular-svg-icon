@@ -81,14 +81,13 @@ size the SVG.
 
 ## Background
 
-The svg-icon is an Angular 2 component that allows for the continuation of the
+The svg-icon is an Angular 5 component that allows for the continuation of the
 AngularJS method for easily inlining SVGs explained by [Ben
 Markowitz](https://www.mobomo.com/2014/09/angular-js-svg/) and others. Including
 the SVG source inline allows for the graphic to be easily styled by CSS.
 
 The technique made use of ng-include to inline the svg source into the document.
-Angular 2, however, drops the support of ng-include, so this is my work-around
-method.
+Angular 2 dropped the support of ng-include, so this is a work-around technique.
 
 *Note:* The [icon
 component](https://www.npmjs.com/package/@angular2-material/icon) from
@@ -100,7 +99,5 @@ security concerns.
 
 MIT
 
-
 ## Author
 - David Czeck [@czeckd](https://github.com/czeckd)
-
